@@ -1,35 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Веб-сторінка з центральним блоком</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-    
-    .container {
-      width: 800px; /* Ширина основного блоку */
-      margin: auto; /* Вирівнювання по центру */
-      position: relative;
-      border: 1px solid black; /* Встановлюємо відносне позиціонування для внутрішніх елементів */
-    }
-    
-    .element {
-      position: absolute; /* Встановлюємо абсолютне позиціонування для решти елементів */
-      /* Встановлюємо позицію відносно основного блоку */
-      /* Нижче наведений приклад позиціонування, ви можете змінити значення, як вам потрібно */
-      top: 20px;
-      left: 20px;
-      background-color: #f1f1f1;
-      padding: 10px;
-    }
-  </style>
+<style>
+.container {
+  width: 600px;
+  height: 600px;
+  margin: auto; 
+  position: relative;
+  border: 1px solid #000;
+}
+
+.box {
+  position: absolute;
+  top: 25%; 
+  left: 25%; 
+  transform: translate(-50%, -50%);
+  background-color: #f0f0f0;
+  width: 200px;
+  height: 200px;
+}
+</style>
 </head>
 <body>
-  <div class="container">
-    <div class="element">Решта елементів</div>
-    <!-- Додайте інші елементи тут -->
-  </div>
+
+<div class="container">
+  <div class="box"></div>
+ 
+</div>
+
 </body>
 </html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           
+            width: 320px;
+            height: 768px;
+        }
+        nav{
+            display: flex;
+            width: 100%;
+        }
+        .menu-buttons {
+            text-align: left;
+        }
+          
+        .search-field {
+            
+            margin-left: auto;
+            text-align: right;
+           
+        }
+       
+          .large-div > img{
+            width: 200px;
+            height: 100px;
+          }
+          .gallery {
+            display: flex;
+            flex-wrap: wrap;
+          }
+          
+          .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+          }
+          
+          .row > img {
+            width: 100%;
+            height: auto;
+          }
+    </style>
+</head>
+<body>
+    <header>
+    <img src="images/R.png" alt="logo" height="50px" width="100px">
+    <div class="search-field">
+        <input type="text" class="search-input" placeholder="Пошук">
+    </div>
+    </header>
+    <nav>
+        <div class="menu-buttons">
+          <button class="menu-button">Клавіша 1</button>
+          <button class="menu-button">Клавіша 2</button>
+          <button class="menu-button">Клавіша 3</button>
+        </div>
+        
+    </nav>
+    <div class="osnova">
+        <div class="large-div">
+            <h2>Lorem ipsum</h2>
+            <img src="images/R.png" alt="logo">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quod cum voluptas expedita tenetur fugiat reprehenderit nam laudantium minima, cumque minus iusto explicabo dolorem aperiam? Temporibus laborum hic harum rerum!</p>
+        </div>
+        
+        
+        <h4>Lorem</h4>
+        <div class="gallery">
+            
+            <div class="row">
+                <img src="images/R.png" alt="logo">
+                <img src="images/R.png" alt="logo">
+                <img src="images/R.png" alt="logo">
+              </div>
+              
+        </div>
+        
+    </div>
+    
+</body>
+</html>

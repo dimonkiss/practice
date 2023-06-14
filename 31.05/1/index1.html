@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-left: 60px;
+            margin-right: 60px;
+            width: 1024px;
+            height: 1280px;
+        }
+        nav{
+            display: flex;
+            width: 100%;
+        }
+        .menu-buttons {
+            text-align: left;
+        }
+          
+          .search-field {
+            margin-left: auto;
+            text-align: right;
+        }
+        .osnova{
+            display: flex;
+        }      
+          
+        .small-divs {
+            flex: 1;
+            
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            
+            width: 33%;
+          }
+          
+          
+          
+          .large-div {
+            flex: 2;
+          }
+          .large-div > img{
+            width: 550px;
+            height: 275px;
+          }
+          .gallery {
+            display: flex;
+            flex-wrap: wrap;
+          }
+          
+          .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+          }
+          
+          .row > img {
+            width: 100%;
+            height: auto;
+          }
+    </style>
+</head>
+<body>
+    <img src="images/R.png" alt="logo" height="100px" width="200px">
+    <nav>
+        <div class="menu-buttons">
+          <button class="menu-button">Клавіша 1</button>
+          <button class="menu-button">Клавіша 2</button>
+          <button class="menu-button">Клавіша 3</button>
+        </div>
+        <div class="search-field">
+          <input type="text" class="search-input" placeholder="Пошук">
+        </div>
+    </nav>
+    <div class="osnova">
+        <div class="large-div">
+            <h2>Lorem ipsum</h2>
+            <img src="images/R.png" alt="logo">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quod cum voluptas expedita tenetur fugiat reprehenderit nam laudantium minima, cumque minus iusto explicabo dolorem aperiam? Temporibus laborum hic harum rerum!</p>
+        </div>
+        <div class="small-divs">
+        <div>
+            <h4>List</h4>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+            </ul>
+        </div>
+        <div class="gallery">
+            <h4>Lorem</h4>
+            <div class="row">
+                <img src="images/R.png" alt="logo">
+                <img src="images/R.png" alt="logo">
+                <img src="images/R.png" alt="logo">
+              </div>
+              <div class="row">
+                <img src="images/R.png" alt="logo">
+                <img src="images/R.png" alt="logo">
+                <img src="images/R.png" alt="logo">
+              </div>
+        </div>
+        </div>
+    </div>
+    <p>Copyright</p>
+</body>
+</html>

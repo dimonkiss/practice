@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Переміщення блоку</title>
+  <style>
+    #myBlock1 {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      position: absolute;
+    }
+    #myBlock2 {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        position: absolute;
+        left: 150px;
+      }
+      #myBlock3 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+        left: 300px;
+      }
+
+  </style>
+</head>
+<body>
+  <div id="myBlock1"></div>
+  <div id="myBlock2"></div>
+  <div id="myBlock3"></div>
+  <script>
+    
+    document.addEventListener("click", function(event) {
+        var mouseX = event.pageX;
+        var mouseY = event.pageY;
+        
+        
+        var element = document.getElementById("myBlock1");
+
+
+        element.style.left = mouseX + "px";
+        element.style.top = mouseY + "px";
+      });
+      document.addEventListener("mousewheel", function(event) {
+        var mouseX = event.pageX;
+        var mouseY = event.pageY;
+        
+        
+        var element = document.getElementById("myBlock2");
+
+
+        element.style.left = mouseX + "px";
+        element.style.top = mouseY + "px";
+      });
+      document.addEventListener("contextmenu", function(event) {
+        var mouseX = event.pageX;
+        var mouseY = event.pageY;
+        
+        event.preventDefault();
+        var element = document.getElementById("myBlock3");
+
+
+        element.style.left = mouseX + "px";
+        element.style.top = mouseY + "px";
+      });
+  </script>
+</body>
+</html>

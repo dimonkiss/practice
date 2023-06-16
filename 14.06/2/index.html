@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Переміщення блоку</title>
+  <style>
+    #myBlock {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <div id="myBlock"></div>
+
+  <script>
+    
+    document.addEventListener("click", function(event) {
+        var mouseX = event.pageX;
+        var mouseY = event.pageY;
+        
+        
+        var element = document.getElementById("myBlock");
+
+
+        element.style.left = mouseX + "px";
+        element.style.top = mouseY + "px";
+      });
+  </script>
+</body>
+</html>

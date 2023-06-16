@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blue and Gray Divs</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <section>
+  <div id="bluediv"></div>
+  <div id="yellowdiv"></div>
+  <div id="greendiv"></div>
+</section>
+  <div id="graydiv"></div>
+  
+<script>
+    bluediv.onmouseover = function() {
+        graydiv.style.backgroundColor = 'blue';
+    };
+    bluediv.onmouseout = function() {
+        graydiv.style.backgroundColor = 'gray';
+    };
+    yellowdiv.onmouseover = function() {
+        graydiv.style.backgroundColor = 'yellow';
+    };
+    yellowdiv.onmouseout = function() {
+        graydiv.style.backgroundColor = 'gray';
+    };
+    greendiv.onmouseover = function() {
+        graydiv.style.backgroundColor = 'green';
+    };
+    greendiv.onmouseout = function() {
+        graydiv.style.backgroundColor = 'gray';
+    };
+</script>
+</body>
+</html>
+
+
+
